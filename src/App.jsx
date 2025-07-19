@@ -10,6 +10,7 @@ function App() {
     incorrect: 0,
     finished: false
   })
+  const[dis,setDis] = useState(true)
   const[start,setStart] = useState(false)
   function reset(){
   setQuestion()
@@ -40,6 +41,8 @@ function recall(){
   setStart(false)
   setPoint(prev =>({...prev, finished:false}))
 }
+
+console.log(question)
   return (
     <>
     {start===false?<div className='start-container'>
