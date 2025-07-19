@@ -105,7 +105,8 @@ select[name="category"]:focus {
   display: flex;
   flex-direction: column;
   width: max-content;
-  border: 10px solid #1e40af;
+  border: 5px solid #1e40af;
+  border-radius: 15px;
   padding: 20px;
   align-items: center;
   justify-content: center;
