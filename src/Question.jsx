@@ -9,27 +9,31 @@ export default function Question(prop){
     }
 }
     const radioArray = [<div className='radio'>
+        <input type="radio" name="answer" id="1" value={prop[prop.count].correct_answer} />
+
     <label htmlFor="1" dangerouslySetInnerHTML={{__html: prop[prop.count].correct_answer}}>
                 
 
                     </label>
-<input type="radio" name="answer" id="1" value={prop[prop.count].correct_answer} />
 </div>, <div className='radio'>
+                        <input type="radio" name="answer" id="2" value={prop[prop.count].incorrect_answers[0]} />
+
     <label htmlFor="2" dangerouslySetInnerHTML={{__html: prop[prop.count].incorrect_answers[0]}}>
     
     </label>
-                    <input type="radio" name="answer" id="2" value={prop[prop.count].incorrect_answers[0]} />
                     </div>, <div className='radio'>
+                        <input type="radio" name="answer" id="3" value={prop[prop.count].incorrect_answers[1]} />
+
                 <label htmlFor="3" dangerouslySetInnerHTML={{__html: prop[prop.count].incorrect_answers[1]}}>
                 
                             </label>
 
-<input type="radio" name="answer" id="3" value={prop[prop.count].incorrect_answers[1]} />
 </div>, <div className='radio'>
+                                <input type="radio" name="answer" id="4" value={prop[prop.count].incorrect_answers[2]} />
+
             <label htmlFor="4" dangerouslySetInnerHTML={{__html: prop[prop.count].incorrect_answers[2]}}>
                 
             </label>
-                            <input type="radio" name="answer" id="4" value={prop[prop.count].incorrect_answers[2]} />
 
 </div>]
 shuffleArray(radioArray)
